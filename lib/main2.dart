@@ -68,16 +68,17 @@ class Loginpage extends StatefulWidget{
                   ),
             
                  new Card(
-                    color: Colors.white12,
+                    color: Colors.white.withOpacity(0.4),
                  
                     child: Container(
                       height: 60.0,
-                     child: ListView(
+                     child: ListView(    
+                                          
                       scrollDirection: Axis.horizontal,
-                      children: <Widget>[                        
-                  
+                      children: <Widget>[                                          
                    Container(
-                          margin: EdgeInsets.only(top: 10.0, left: 10.0, bottom: 10.0),
+                          margin: EdgeInsets.only(top: 10.0, left: 10.0, bottom: 10.0, right: 5.0 ),
+                        
                            child: CircleAvatar(                               
                         backgroundImage: AssetImage('assets/picture.png'),                        
                          maxRadius: 20.0,
@@ -87,7 +88,8 @@ class Loginpage extends StatefulWidget{
                            
                               
                   Container(
-                     margin: EdgeInsets.only(top: 5.0, left: 10.0, bottom: 5.0),
+                     width: MediaQuery.of(context).size.width * 0.40,
+                     margin: EdgeInsets.only(top: 5.0, left: 10.0, bottom: 5.0, right: 5.0),
                    child:   new Column(
                        children: <Widget>[
                          new Text('Continue as', 
@@ -103,6 +105,8 @@ class Loginpage extends StatefulWidget{
                        ],
                      ),
                   ),
+                  
+                 
 
                    Container(
                      margin: EdgeInsets.only(left: 40.0),
@@ -116,10 +120,10 @@ class Loginpage extends StatefulWidget{
                     ),
                   ),
                   ),
-                    
+                  new VerticalDivider(width: 20.0, color: Colors.black,),
 
                   Container(
-                          margin: EdgeInsets.only(top: 10.0, left: 10.0, bottom: 10.0),
+                          margin: EdgeInsets.only(top: 10.0, left: 10.0, bottom: 10.0, right: 5.0,),
                            child: CircleAvatar(                               
                         backgroundImage: AssetImage('assets/picture.png'),                        
                          maxRadius: 20.0,
@@ -128,7 +132,7 @@ class Loginpage extends StatefulWidget{
                      ),
 
                   Container(
-                     margin: EdgeInsets.only(top: 5.0, left: 10.0, bottom: 5.0),
+                     margin: EdgeInsets.only(top: 5.0, left: 10.0, bottom: 5.0, right: 5.0),
                    child:   new Column(
                        children: <Widget>[
                          new Text('Continue as', 
@@ -158,8 +162,9 @@ class Loginpage extends StatefulWidget{
                   ),
                   ),
 
+                     new VerticalDivider(width: 20.0, color: Colors.black,),
                   Container(
-                          margin: EdgeInsets.only(top: 10.0, left: 10.0, bottom: 10.0),
+                          margin: EdgeInsets.only(top: 10.0, left: 10.0, bottom: 10.0, right: 5.0),
                            child: CircleAvatar(                               
                         backgroundImage: AssetImage('assets/picture.png'),                        
                          maxRadius: 20.0,
@@ -168,7 +173,7 @@ class Loginpage extends StatefulWidget{
                      ),
 
                   Container(
-                     margin: EdgeInsets.only(top: 5.0, left: 10.0, bottom: 5.0),
+                     margin: EdgeInsets.only(top: 5.0, left: 10.0, bottom: 5.0, right: 5.0),
                    child:   new Column(
                        children: <Widget>[
                          new Text('Continue as', 
@@ -197,6 +202,7 @@ class Loginpage extends StatefulWidget{
                     ),
                   ),
                   ),
+                  
                       ],
                     ),
 
