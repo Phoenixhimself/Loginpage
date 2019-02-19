@@ -25,6 +25,8 @@ class Loginpage extends StatefulWidget{
             resizeToAvoidBottomPadding: true,
        
        body: Container(
+           width: MediaQuery.of(context).size.width * 1.0,
+            height: MediaQuery.of(context).size.height * 1.0,
             decoration: new BoxDecoration(
               image: new DecorationImage(
                 fit:BoxFit.cover,
@@ -225,8 +227,9 @@ class Loginpage extends StatefulWidget{
                             MaterialPageRoute(builder: (context) => Login()),
                           );
                     },
-               
-                 child:   new Card(  
+               child: Container(
+                   padding: EdgeInsets.only(right: 20.0),
+                 child:   new Card(   
                    color: Colors.lightBlue,    
                     child: Container(
                     height: 40.0,                                       
@@ -242,6 +245,7 @@ class Loginpage extends StatefulWidget{
                  ),
                   
                    ),
+                   ),
                   
                    InkWell(
                     onTap: (){
@@ -249,11 +253,13 @@ class Loginpage extends StatefulWidget{
                             MaterialPageRoute(builder: (context) => Login()),
                           );
                     },
-               
+               child: Container(
+                   padding: EdgeInsets.only(right: 20.0),
                  child:   new Card(  
                    color: Colors.white10,    
                     child: Container(
-                    height: 40.0,                                       
+                    height: 40.0,      
+                     width: MediaQuery.of(context).size.width * 0.75,                                 
                     child: Container(
                      child: new Row(
                         crossAxisAlignment: CrossAxisAlignment.center,
@@ -278,6 +284,7 @@ class Loginpage extends StatefulWidget{
                     ),
          ),
                  ),
+               ),
                   
                    ),
                   
